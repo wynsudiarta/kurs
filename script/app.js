@@ -7,7 +7,7 @@ var Comment = React.createClass({
 
         return (
             <tr>
-                <td>{props.item.gsx$currency.$t}</td>
+                <td>{props.item.gsx$bank.$t}</td>
                 <td>{numeral(props.item.gsx$beli.$t).format('0,0')}</td>
                 <td>{numeral(props.item.gsx$jual.$t).format('0,0')}</td>
             </tr>
@@ -137,11 +137,11 @@ var Calculator = React.createClass({
                     <div className="row gtr-uniform">
                         <div className="col-3 col-12-small">
                             <input type="radio" id="demo-priority-low" checked={this.props.kurs=== 'AUD'}  name="demo-priority"  />
-                            <label onClick={()=>{this.handleInputChange('AUD')}}>AUD</label>
+                            <label onClick={()=>{this.handleInputChange('AUD')}}>Mandiri</label>
                         </div>
                         <div className="col-3 col-12-small">
                             <input type="radio" id="demo-priority-normal" name="demo-priority"  checked={this.props.kurs=== 'USD'}  />
-                            <label onClick={()=>{this.handleInputChange('USD')}}>USD</label>
+                            <label onClick={()=>{this.handleInputChange('USD')}}>BCA</label>
                         </div>
                     </div>
                     <br/>
